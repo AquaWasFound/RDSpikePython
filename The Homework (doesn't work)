@@ -1,0 +1,15 @@
+#Imports
+from spike import PrimeHub, LightMatrix, Button, StatusLight, ForceSensor, MotionSensor, Speaker, ColorSensor, App, DistanceSensor, Motor, MotorPair
+from spike.control import wait_for_seconds, wait_until, Timer
+from math import *
+
+#Objects
+hub = PrimeHub() 
+motor = Motor('E')
+
+#Execute
+for i in range(1,100,1):
+    e = 44
+    d = get_degrees_counted()
+    g = (e+d)
+    print(d)
